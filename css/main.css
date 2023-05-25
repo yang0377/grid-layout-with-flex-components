@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+  }
+  
+  .emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .icon {
+    font-size: 4rem;
+  }
+
+  .emoji {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .emojis {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "one two"
+    "three four";
+  }
+
+  .emojis :nth-child(1) {
+    grid-area: one;
+    margin-right: 5px;
+  }
+
+  .emojis :nth-child(2) {
+    grid-area: two;
+    margin-left: 5px;
+  }
+
+  .emojis :nth-child(3) {
+    grid-area: three;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+
+  .emojis :nth-child(4) {
+    grid-area: four;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
