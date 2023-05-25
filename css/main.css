@@ -38,7 +38,8 @@ body {
   }
 
   p {
-    margin: auto;
+    /* margin: auto; */
+    flex-grow: 1;
   }
 
   .emojis {
